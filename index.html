@@ -1,0 +1,126 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daniel Nguyen: Automation Case Studies (SEO × AI Agents)</title>
+<meta name="description" content="Two case studies by Daniel Nguyen: a backlink automation pipeline and AI agent operations for a multi-client SEO agency.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="progress" id="prog"></div>
+<div class="cur" id="cur"></div>
+<nav><a href="#top" class="logo">Daniel Nguyen<span>.solutions</span></a><div><a href="#c1">01 Backlinks</a><a href="#c2">02 Agent Ops</a><a href="#tools">Tools</a><a href="#ct">Contact</a></div></nav>
+
+<header class="hero wrap" id="top">
+ <div class="hero-copy">
+  <p class="kick">Case studies · SEO × AI agent automation · 2026</p>
+  <h1><span class="line"><span>I turn SEO grind</span></span><span class="line"><span>into <em>systems</em></span></span><span class="line"><span>that run themselves.</span></span></h1>
+  <p class="lede">Digital Marketing Leader (since Jan 2021). These pages show two automation systems I run for a multi-client agency with Grok Bot agents, scheduled routines, Google Sheets, Discord and SEO APIs.</p>
+ </div>
+ <svg class="net" viewBox="0 0 520 520" aria-label="Network of Daniel's AI agents">
+  <defs><radialGradient id="glow"><stop offset="0" stop-color="#7b5cff" stop-opacity=".55"/><stop offset="1" stop-color="#7b5cff" stop-opacity="0"/></radialGradient><linearGradient id="gr" x1="0" x2="1"><stop offset="0" stop-color="#00d4ff"/><stop offset=".5" stop-color="#7b5cff"/><stop offset="1" stop-color="#ff4fd8"/></linearGradient></defs>
+  <circle cx="260" cy="260" r="220" fill="url(#glow)"/>
+  <g id="netg"></g>
+ </svg>
+ <div class="stats">
+  <div class="stat"><b data-n="1818">1,818</b><small>guest-post sites audited</small></div>
+  <div class="stat"><b data-n="22">22</b><small>client channels checked daily</small></div>
+  <div class="stat"><b data-n="71">71</b><small>Upwork applicants screened</small></div>
+  <div class="stat"><b data-n="11">11</b><small>public tools &amp; playbooks shipped</small></div>
+ </div>
+</header>
+
+<div class="mq"><div>Guest-post audit ✦ Citation sync ✦ Competitor teardown ✦ Discord alerts ✦ Task-report nudges ✦ Candidate screening ✦ GBP optimisation ✦ AI content ✦ Guest-post audit ✦ Citation sync ✦ Competitor teardown ✦ Discord alerts ✦ Task-report nudges ✦ Candidate screening ✦ GBP optimisation ✦ AI content ✦&nbsp;</div></div>
+
+<main class="wrap">
+<!-- ============ CASE 1 ============ -->
+<section class="case" id="c1">
+ <p class="num rv">01 / Case study</p>
+ <h2 class="rv">Backlink Automation <em>Pipeline</em></h2>
+ <div class="tags rv"><span>Semrush</span><span>DataForSEO API</span><span>Google Sheets</span><span>Gmail audit</span><span>Browser agents</span><span>PDF reporting</span></div>
+
+ <div class="row rv"><h3>Problem</h3><p>The agency runs several brands (HiAgency, Hair Folli, J.Aesthetic, Everyday Clean). It had a 1,818-site guest-post vendor list nobody could vet by hand, citation trackers that had drifted away from what was actually live, and no clear answer to why a local competitor outranked a client.</p></div>
+
+ <div class="row rv"><h3>System</h3><div class="sys">
+  <article class="wfcard"><header><span>Workflow 1</span>Guest-post vendor audit</header><div class="wf" data-wf="audit"></div></article>
+  <figure class="shot rv"><div class="chrome"><i></i><i></i><i></i><span>Guest Post Audit · Business</span></div><img src="assets/shot-audit.webp" alt="First rows of the real Guest Post Audit export: domain, S–F tier, Authority Score, live traffic and AU share, verdict" loading="lazy"><figcaption>Rendered from the real exported CSV (first 22 of 1,818 rows). Vendor price columns are hidden.</figcaption></figure>
+  <div class="tiers rv" aria-label="Tier distribution">
+   <h4>Tier distribution across all 1,818 sites <small>(counted from the export)</small></h4>
+   <div class="tb" style="--w:.28%"><b>S</b><i></i><span>5</span></div>
+   <div class="tb" style="--w:7.1%"><b>A</b><i></i><span>129</span></div>
+   <div class="tb" style="--w:5.7%"><b>B</b><i></i><span>104</span></div>
+   <div class="tb" style="--w:49.2%"><b>C</b><i></i><span>894</span></div>
+   <div class="tb f" style="--w:37.7%"><b>F</b><i></i><span>686 · dropped</span></div>
+  </div>
+  <figure class="shot rv"><div class="chrome"><i></i><i></i><i></i><span>Tab “Mua ngay” (buy now)</span></div><img src="assets/shot-shortlist.webp" alt="Real prioritised shortlist with priority group and reasoning per site" loading="lazy"><figcaption>The 126-site shortlist with a priority group and reasoning for each row (rendered from the real TSV).</figcaption></figure>
+
+  <article class="wfcard"><header><span>Workflow 2</span>Backlink sheet sync &amp; live-link audit</header><div class="wf" data-wf="sync"></div></article>
+  <div class="slot rv" data-slot="hairfolli-tracker"><b>Screenshot slot</b>Hair Folli: Backlink Tracker / Off-page Lists tab<code>docs.google.com/spreadsheets/d/1pjgy8Y2Y8t0_1JUsa24HOXf2uoHgweblOobiRI9rREU</code><small>Replace with <code>assets/shot-hairfolli-tracker.webp</code>. Blur the login email and password columns.</small></div>
+
+  <article class="wfcard"><header><span>Workflow 3</span>Competitor backlink teardown</header><div class="wf" data-wf="comp"></div></article>
+  <div class="pdf rv">
+   <img src="assets/report-1.webp" alt="Report cover: sydneycommercialcleaners.com vs everydayclean.com.au" loading="lazy">
+   <img src="assets/report-2.webp" alt="Executive summary page" loading="lazy">
+   <img src="assets/report-5.webp" alt="Keyword chart page" loading="lazy">
+   <img src="assets/report-8.webp" alt="Google Maps and Business Profile comparison page" loading="lazy">
+  </div>
+  <p class="cap rv">Real pages from the 16-page PDF (rev. 09/10/2026). Sources: Semrush AU, DataForSEO and a direct crawl. The revision corrected an earlier wrong conclusion about the competitor’s organic traffic.</p>
+ </div></div>
+
+ <div class="row rv"><h3>Results</h3><div class="res">
+  <div><b data-n="1818">1,818</b><small>sites audited end-to-end</small></div>
+  <div><b data-n="686">686</b><small>F-tier sites recommended to drop</small></div>
+  <div><b data-n="126">126</b><small>prioritised shortlist, 16 “buy now”</small></div>
+  <div><b data-n="79">79</b><small>citation rows added to Hair Folli’s Off-page list</small></div>
+  <div><b data-n="16">16</b><small>page competitor PDF report</small></div>
+ </div></div>
+</section>
+
+<!-- ============ CASE 2 ============ -->
+<section class="case" id="c2">
+ <p class="num rv">02 / Case study</p>
+ <h2 class="rv">AI Agent <em>Operations</em></h2>
+ <div class="tags rv"><span>Scheduled routines</span><span>Discord</span><span>WordPress REST</span><span>Upwork</span><span>Google Business Profile</span><span>Grok Imagine</span><span>ChatCut</span></div>
+
+ <div class="row rv"><h3>Problem</h3><p>Running SEO and content for multiple clients meant constant manual chasing: who hasn’t posted, who hasn’t filed a report, which freelancer to talk to, which Business Profile is off-policy, and what to publish next.</p></div>
+
+ <div class="row rv"><h3>System</h3><div class="sys">
+  <article class="wfcard"><header><span>Workflow 4</span>22-channel content monitor</header><div class="wf" data-wf="monitor"></div></article>
+  <div class="duo">
+   <figure class="shot rv"><div class="chrome dark"><i></i><i></i><i></i><span>content-check/run.log</span></div><img src="assets/shot-content-check.webp" alt="Real run log listing each client channel's last publish date and the resulting Content check alert" loading="lazy"><figcaption>A real run on 21 Oct 2026: every channel’s age, then the alert body that goes to Discord.</figcaption></figure>
+   <div class="slot rv" data-slot="discord-alert"><b>Screenshot slot</b>Discord: the team channel showing a “⚠️ Content check” / “📝 Task report check” message<small>Not in the transcripts. Capture it from the Discord app and save as <code>assets/shot-discord.webp</code>.</small></div>
+  </div>
+  <article class="wfcard"><header><span>Workflow 5</span>Task-report reminder</header><div class="wf" data-wf="report"></div></article>
+  <article class="wfcard"><header><span>Workflow 6</span>Upwork candidate screening</header><div class="wf" data-wf="upwork"></div></article>
+  <div class="slot rv" data-slot="upwork"><b>Screenshot slot</b>Upwork applicant list (Programmatic SEO job)<code>upwork.com/ab/applicants/2110236566773358493/applicants</code><small>Blur freelancer names and photos.</small></div>
+  <article class="wfcard"><header><span>Workflow 7</span>Policy-safe GBP optimisation</header><div class="wf" data-wf="gmb"></div></article>
+  <div class="slot rv" data-slot="gmb"><b>Screenshot slot</b>Google Business Profile: J.Aesthetic services after cleanup (33 names, 12 courses)<small>From business.google.com, signed in as the profile manager.</small></div>
+  <article class="wfcard"><header><span>Workflow 8</span>AI influencer content pipeline (@leo_aimarketing)</header><div class="wf" data-wf="content"></div></article>
+  <div class="media rv">
+   <video src="assets/reel-openseo.mp4" poster="assets/reel-openseo.jpg" muted loop playsinline preload="none" controls></video>
+   <video src="assets/reel-aiemp.mp4" poster="assets/reel-aiemp.jpg" muted loop playsinline preload="none" controls></video>
+   <div class="car">
+    <img src="assets/carousel-1.webp" alt="Carousel slide 1" loading="lazy"><img src="assets/carousel-2.webp" alt="Carousel slide 2" loading="lazy"><img src="assets/carousel-3.webp" alt="Carousel slide 3" loading="lazy"><img src="assets/carousel-4.webp" alt="Carousel slide 4" loading="lazy"><img src="assets/carousel-5.webp" alt="Carousel slide 5" loading="lazy">
+   </div>
+  </div>
+  <p class="cap rv">The real outputs: the OpenSEO reel (25s, 9:16), the “AI Employees” reel, and a 5-slide Van Gogh-style carousel (1080×1350).</p>
+  <div class="slot rv" data-slot="seo-plan"><b>Screenshot slot</b>Hair Folli 90-day SEO plan (56 tasks, Overview progress tab)<code>docs.google.com/spreadsheets/d/1yd7vffBIq7AD_hVqyv2Tl_WTCK091aZ35nLrUFzgwMQ</code></div>
+ </div></div>
+
+ <div class="row rv"><h3>Results</h3><div class="res">
+  <div><b data-n="22">22</b><small>channels checked automatically</small></div>
+  <div><b data-n="71">71</b><small>applicants screened (26 + 45), $0 spent</small></div>
+  <div><b data-n="33">33</b><small>GBP service names cleaned</small></div>
+  <div><b data-n="12">12</b><small>courses added to a GBP listing</small></div>
+  <div><b data-n="56">56</b><small>task SEO plan across 3 pillars</small></div>
+ </div></div>
+</section>
+
+<section class="case" id="tools">
+ <p class="num rv">03 / Built tools</p>
+ <h2 class="rv">Open playbooks &amp; <em>tools</em></h2>
+ <div class="tools" id="toolgrid"></div>
+</section>
+
+<footer id="ct"><h2 class="rv">Let’s automate<br><em>the boring parts.</em></h2>
+ <p class="rv"><a href="mailto:hello@danielnguyen.solutions">hello@danielnguyen.solutions</a> · <a href="https://danielnguyen.solutions">danielnguyen.solutions</a> · <a href="https://github.com/danielnguyen241">github.com/danielnguyen241</a></p></footer>
+</main>
+<script src="content.js"></script><script src="workflow.js"></script><script src="main.js"></script>
+</body></html>

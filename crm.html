@@ -17,7 +17,7 @@
   <div class="stat"><b data-n="13">13</b><small>SOP &amp; toolkit entries</small></div>
  </div>
 </header>
-<figure class="shot rv"><div class="chrome"><i></i><i></i><i></i><span>hq.hiagency.au · Agency Projects</span></div><img src="assets/crm/projects.webp" alt="HiAgency HQ Agency Projects module with client cards linking Google Sheets and Looker Studio reports"></figure>
+<figure class="shot rv"><div class="chrome"><i></i><i></i><i></i><span>hq.hiagency.au · Agency Projects</span></div><img width="1440" height="900" decoding="async" src="assets/crm/projects.webp" alt="HiAgency HQ Agency Projects module with client cards linking Google Sheets and Looker Studio reports"></figure>
 
 <section class="case" style="padding-top:12vh">
  <div class="row rv"><h3>Problem</h3><p>The agency’s operating data lived in separate Google Sheets: staff, monthly shifts, daily task logs, client master files, SOPs and reviews. Leadership had no single place to see who works on which client, what got done, or where each client’s reports live.</p></div>
@@ -55,7 +55,7 @@ const TABS=[
 ['sops','05','SOPs & Playbooks',['13 kits: 9 active, 4 suggested','6 categories, from backlinks and indexing to operations','Each kit links its GitHub repo (see the built tools on the home page)']],
 ['performance','06','Performance Reviews',['5-competency appraisal rated 1–5 stars','Promotion decision and target level','6 reviews in history']],
 ['skills','07','Skills Matrix',['18 weighted criteria across SEO and Content Marketing','Benchmarks for Intern, Junior, Exec and Senior']]];
-document.querySelector('.gal').innerHTML=TABS.map(([f,n,t,li])=>`<div class="gi rv"><div><span class="k">${n}</span><h4>${t}</h4><ul>${li.map(x=>`<li>${x}</li>`).join('')}</ul></div><figure class="shot"><div class="chrome"><i></i><i></i><i></i><span>hq.hiagency.au/?tab=${f}</span></div><img src="assets/crm/${f}.webp" alt="HiAgency HQ ${t} module (anonymised)" loading="lazy"></figure></div>`).join('');
+document.querySelector('.gal').innerHTML=TABS.map(([f,n,t,li])=>`<div class="gi rv"><div><span class="k">${n}</span><h4>${t}</h4><ul>${li.map(x=>`<li>${x}</li>`).join('')}</ul></div><figure class="shot"><div class="chrome"><i></i><i></i><i></i><span>hq.hiagency.au/?tab=${f}</span></div><img width="1440" height="900" decoding="async" src="assets/crm/${f}.webp" alt="HiAgency HQ ${t} module (anonymised)" loading="lazy"></figure></div>`).join('');
 </script>
 <script src="workflow.js"></script><script src="main.js"></script>
 </body></html>

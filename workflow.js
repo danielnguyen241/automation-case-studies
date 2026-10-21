@@ -13,6 +13,8 @@ const ICONS={
  mail:['#ea4335','<rect x="5" y="7" width="14" height="10" rx="1.5" fill="#fff"/><path d="M5.5 7.5l6.5 5 6.5-5" stroke="#ea4335" stroke-width="1.6" fill="none"/>'],
  pdf:['#d93025','<path d="M7 4h7l4 4v12H7z" fill="#fff"/><text x="12.5" y="17" font-size="5.5" text-anchor="middle" fill="#d93025" font-family="Arial" font-weight="700">PDF</text>'],
  video:['#ff2e7e','<rect x="5" y="7" width="14" height="10" rx="2" fill="#fff"/><path d="M11 10v4l3.5-2z" fill="#ff2e7e"/>'],
+ looker:['#4285f4','<circle cx="10" cy="10" r="4" fill="#fff"/><circle cx="16" cy="16" r="3" fill="#fff" opacity=".8"/><circle cx="8" cy="17" r="2" fill="#fff" opacity=".6"/>'],
+ wp:['#21759b','<circle cx="12" cy="12" r="7.5" fill="none" stroke="#fff" stroke-width="1.8"/><path d="M8 9l2.5 7L12 11l1.5 5L16 9" stroke="#fff" stroke-width="1.5" fill="none" stroke-linejoin="round"/>'],
  code:['#f5a623','<path d="M9 8l-4 4 4 4M15 8l4 4-4 4" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/>']
 };
 const W=168,H=64;
@@ -24,6 +26,7 @@ const WORKFLOWS={
  report:{n:[['Schedule','16:40 Mon–Fri','cron'],['Read task sheet','team rows','sheets'],['IF empty 2 past days','today excluded','if'],['Discord','📝 Task report check','discord']],e:[[0,1],[1,2],[2,3,'true']]},
  upwork:{n:[['Schedule','next morning','cron'],['Upwork applicants','26 + 45 proposals','upwork'],['Rank top 5','rate · JSS · cases','ai'],['Human approval','Daniel picks 3','if'],['Send invite','free intro call','upwork']],e:[[0,1],[1,2],[2,3],[3,4,'approve']]},
  gmb:{n:[['On request','profile list','cron'],['Read live GBP','+ website facts','gmb'],['Propose edits','safe categories only','ai'],['Human approval','Daniel','if'],['Apply in chunks','desc · categories · services','gmb'],['Audit','policy-risk report','ai']],e:[[0,1],[1,2],[2,3],[3,4,'approve'],[4,5]]},
+ crm:{n:[['Auto-sync / Sync Data','schedule + button','cron'],['Google Sheets','staff · shifts · logs','sheets'],['Sync & normalise','WordPress back-end','wp'],['People modules','Staff · shifts · reviews','ai'],['Work modules','Tasks · projects · SOPs','ai'],['Client reporting','Looker · GSC links','looker'],['CSV export','schedule · 1,052 logs','code']],e:[[0,1],[1,2],[2,3],[2,4],[4,5],[3,6],[4,6]]},
  content:{n:[['Saved idea','reel / repo link','cron'],['Script + plan','AI agent','ai'],['Approve','Daniel','if'],['Render scenes','Grok Imagine + code','video'],['ChatCut edit','9:16 timeline','video'],['Deliver','MP4 + caption','code']],e:[[0,1],[1,2],[2,3,'ok'],[3,4],[4,5]]}
 };
 function layout(wf){ // columns by depth

@@ -1,0 +1,61 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HiAgency HQ: a self-built agency CRM | Daniel Nguyen</title>
+<meta name="description" content="Case study: HiAgency HQ, an internal operations CRM on WordPress, synced from Google Sheets. It covers staff, schedules, task logs, client projects, SOPs, appraisals and a skills matrix.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<div class="progress" id="prog"></div><div class="cur" id="cur"></div>
+<nav><a href="index.html" class="logo">Daniel Nguyen<span>.solutions</span></a><div><a href="index.html#c1">01 Backlinks</a><a href="index.html#c2">02 Agent Ops</a><a href="crm.html">03 HiAgency HQ</a><a href="index.html#ct">Contact</a></div></nav>
+<main class="wrap">
+<header class="hero" style="grid-template-columns:1fr;min-height:auto;padding-bottom:6vh">
+ <div><p class="kick">03 / Case study · Internal CRM · hq.hiagency.au</p>
+ <h1><span class="line"><span>HiAgency <em>HQ</em></span></span><span class="line"><span>one portal for</span></span><span class="line"><span>the whole agency.</span></span></h1>
+ <p class="lede">A self-built operations portal with a WordPress front-end. Its data is synced from the team’s Google Sheets on a schedule, or on demand with the Sync Data button.</p></div>
+ <div class="stats">
+  <div class="stat"><b data-n="1052">1,052</b><small>task logs synced</small></div>
+  <div class="stat"><b data-n="7">7</b><small>active client accounts</small></div>
+  <div class="stat"><b data-n="33">33</b><small>linked sheets &amp; reports</small></div>
+  <div class="stat"><b data-n="13">13</b><small>SOP &amp; toolkit entries</small></div>
+ </div>
+</header>
+<figure class="shot rv"><div class="chrome"><i></i><i></i><i></i><span>hq.hiagency.au · Agency Projects</span></div><img src="assets/crm/projects.webp" alt="HiAgency HQ Agency Projects module with client cards linking Google Sheets and Looker Studio reports"></figure>
+
+<section class="case" style="padding-top:12vh">
+ <div class="row rv"><h3>Problem</h3><p>The agency’s operating data lived in separate Google Sheets: staff, monthly shifts, daily task logs, client master files, SOPs and reviews. Leadership had no single place to see who works on which client, what got done, or where each client’s reports live.</p></div>
+ <div class="row rv"><h3>System</h3><div class="sys">
+  <article class="wfcard"><header><span>Data flow</span>Google Sheets → Sync → HQ modules → Looker / GSC</header><div class="wf" data-wf="crm"></div></article>
+  <ul class="rv" style="list-style:none">
+   <li style="padding:14px 0;border-bottom:1px solid var(--line);font-size:clamp(17px,1.5vw,22px)"><strong style="color:var(--ac);font-weight:600">Sheets stay the source of truth.</strong> The team keeps working in Google Sheets, and HQ pulls the data on auto-sync or when someone presses Sync Data.</li>
+   <li style="padding:14px 0;border-bottom:1px solid var(--line);font-size:clamp(17px,1.5vw,22px)"><strong style="color:var(--ac);font-weight:600">Seven modules</strong>: Employees, Work Schedule, Task Reports, Agency Projects, SOPs &amp; Playbooks, Performance Reviews and Skills Matrix.</li>
+   <li style="padding:14px 0;font-size:clamp(17px,1.5vw,22px)"><strong style="color:var(--ac);font-weight:600">Linked out, not duplicated.</strong> Each client card links its Sheets, Looker Studio and GSC reports, and each SOP links its GitHub repo.</li>
+  </ul>
+ </div></div>
+ <div class="row rv"><h3>Results</h3><div class="res">
+  <div><b data-n="1052">1,052</b><small>task logs · 94% avg deep-work score</small></div>
+  <div><b data-n="11">11</b><small>clients · 10 task categories</small></div>
+  <div><b data-n="154">154</b><small>workdays tracked in 10/2026 (95 on-site · 59 remote)</small></div>
+  <div><b data-n="13">13</b><small>SOP kits (9 active · 4 suggested), 6 categories</small></div>
+  <div><b data-n="18">18</b><small>weighted skill criteria, Intern → Senior</small></div>
+ </div></div>
+</section>
+
+<section class="case">
+ <p class="num rv">Module tour</p><h2 class="rv">Tab by <em>tab</em></h2>
+ <div class="gal">
+ </div>
+ <p class="privacy rv">Privacy: staff names, photos, the admin username, task-log text and appraisal outcomes are blurred. Client names are already public elsewhere on this site. Browser chrome has been cropped.</p>
+</section>
+<footer id="ct"><h2 class="rv">Want an HQ<br><em>for your team?</em></h2><p class="rv"><a href="mailto:hello@danielnguyen.solutions">hello@danielnguyen.solutions</a> · <a href="index.html">← All case studies</a></p></footer>
+</main>
+<script>
+const TABS=[
+['employees','01','PIM / Employees',['7 active of 8 total staff','Filters by department, client project and competency level','Cards show on-site vs remote workdays, assigned projects and tasks logged']],
+['schedule','02','Work Schedule',['Monthly shift grid synced from the Sheet','10/2026: 154 workdays · 95 on-site · 59 remote · 63 off','Shift types OS / R / OFF / H / L, with CSV export']],
+['tasks','03','Task Reports',['1,052 task logs, 94% average deep-work score','11 clients, 10 categories','Filters by staff, client, category and focus, with CSV export']],
+['projects','04','Agency Projects',['7 active accounts, 33 linked sheets','Each client card links its Sheets, Looker Studio and GSC reports','Shows the assigned team and recent task logs']],
+['sops','05','SOPs & Playbooks',['13 kits: 9 active, 4 suggested','6 categories, from backlinks and indexing to operations','Each kit links its GitHub repo (see the built tools on the home page)']],
+['performance','06','Performance Reviews',['5-competency appraisal rated 1–5 stars','Promotion decision and target level','6 reviews in history']],
+['skills','07','Skills Matrix',['18 weighted criteria across SEO and Content Marketing','Benchmarks for Intern, Junior, Exec and Senior']]];
+document.querySelector('.gal').innerHTML=TABS.map(([f,n,t,li])=>`<div class="gi rv"><div><span class="k">${n}</span><h4>${t}</h4><ul>${li.map(x=>`<li>${x}</li>`).join('')}</ul></div><figure class="shot"><div class="chrome"><i></i><i></i><i></i><span>hq.hiagency.au/?tab=${f}</span></div><img src="assets/crm/${f}.webp" alt="HiAgency HQ ${t} module (anonymised)" loading="lazy"></figure></div>`).join('');
+</script>
+<script src="workflow.js"></script><script src="main.js"></script>
+</body></html>

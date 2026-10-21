@@ -72,3 +72,11 @@ h2{font-weight:800;font-size:clamp(40px,6.6vw,110px);letter-spacing:-.045em;line
 footer{padding:16vh 0 10vh;border-top:1px solid var(--line)}footer p{color:var(--mut);margin-top:20px}footer a{text-decoration:none;border-bottom:1px solid var(--line)}
 @media(max-width:900px){.hero{grid-template-columns:1fr}.net{justify-self:center;max-width:360px}.stats{grid-template-columns:1fr 1fr}.row{grid-template-columns:1fr;gap:18px}.row h3{position:static}.duo{grid-template-columns:1fr}.pdf{grid-template-columns:1fr 1fr}.media{grid-template-columns:1fr 1fr}.car{grid-column:1/-1}nav div a:not(:last-child){display:none}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,.wfcard .node{opacity:1;transform:none}.line>span{transform:none}}
+
+.crmcard{display:grid;grid-template-columns:1fr 1.3fr;gap:4vw;align-items:center;padding:4vw;border:1px solid var(--line);border-radius:24px;background:radial-gradient(circle at 0 0,#7b5cff33,transparent 60%),var(--bg2);text-decoration:none;transition:border-color .3s}
+.crmcard:hover{border-color:var(--ac)}.crmcard h2{margin:12px 0 18px}.crmcard p{color:var(--mut);font-size:18px;margin-bottom:22px}.crmcard b{color:var(--ac)}.crmcard img{border-radius:12px;box-shadow:0 30px 80px #000a;transform:perspective(1200px) rotateY(-8deg);transition:transform .6s}.crmcard:hover img{transform:none}
+.crmcard .tg{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ac);font-weight:700}
+.gal{display:grid;gap:9vh}.gi{display:grid;grid-template-columns:320px minmax(0,1fr);gap:4vw;align-items:start}
+.gi h4{font-size:28px;letter-spacing:-.02em;margin:8px 0 14px}.gi .k{color:var(--ac);font-weight:700;font-size:12px;letter-spacing:.16em}.gi ul{list-style:none;color:var(--mut)}.gi li{padding:8px 0;border-bottom:1px solid var(--line);font-size:15px}
+.privacy{border:1px solid var(--line);border-radius:12px;padding:14px 18px;color:var(--mut);font-size:14px;margin-top:20px}
+@media(max-width:900px){.crmcard,.gi{grid-template-columns:1fr}.crmcard img{transform:none}}

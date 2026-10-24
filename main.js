@@ -5,7 +5,7 @@ AG.forEach((n,i)=>{const a=i/AG.length*Math.PI*2-Math.PI/2,r=i%2?170:205,x=cx+r*
  s+=`<g class="nd" style="animation-delay:${-i*.6}s"><circle cx="${x}" cy="${y}" r="7"/><text x="${x}" y="${y+(y<cy?-14:24)}">${n}</text></g>`});
 s+=`<g class="nd hub"><circle cx="${cx}" cy="${cy}" r="38"/><text x="${cx}" y="${cy+5}" style="font-weight:800;fill:#0b0b10">Daniel</text></g>`;g.innerHTML=s})();
 // Tools
-const tg=document.getElementById('toolgrid');if(tg&&window.TOOLS)tg.innerHTML=TOOLS.map(t=>`<a class="tool rv" href="https://github.com/danielnguyen241/${t.n}" target="_blank" rel="noopener"><span class="tg">${t.tag}</span><h4>${t.t}</h4><p>${t.d}</p><code>↗ ${t.n}</code></a>`).join('');
+const tg=document.getElementById('toolgrid');if(tg&&window.TOOLS)tg.innerHTML=TOOLS.map(t=>`<a class="tool rv" href="https://github.com/danielnguyen241/${t.n}" target="_blank" rel="noopener"><span class="tg">${t.tag}</span><h4>${t.t}</h4><p>${t.d}</p><code>↗ ${t.n.replace(/^hiagency-/,"")}</code></a>`).join('');
 // Cursor
 const c=document.getElementById('cur');addEventListener('mousemove',e=>{c.classList.add('on');c.style.left=e.clientX+'px';c.style.top=e.clientY+'px'});
 document.querySelectorAll('a,video,.tool,.res div').forEach(el=>{el.addEventListener('mouseenter',()=>c.classList.add('big'));el.addEventListener('mouseleave',()=>c.classList.remove('big'))});
